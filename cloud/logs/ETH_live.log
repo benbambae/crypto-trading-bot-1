@@ -1,0 +1,13 @@
+2025-06-15 15:38:04,972 | INFO | 🟢 ETH bot started.
+2025-06-15 15:38:05,114 | ERROR | ❌ Exception: ValueError - not enough values to unpack (expected 4, got 3)
+2025-06-15 15:38:05,116 | ERROR | Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/eth_bot.py", line 57, in run_eth_bot
+    ma_cross, vol_spike, momentum_up, price_now = eth_strategy(df)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 3)
+
+2025-06-15 15:41:45,537 | INFO | 🟢 ETH bot started.
+2025-06-15 15:41:53,805 | INFO | 🟢 ETH bot started.
+2025-06-15 15:42:01,589 | INFO | 🟢 ETH bot started.
+2025-06-15 15:42:09,874 | INFO | 🟢 ETH bot started.
+2025-06-15 15:43:10,771 | INFO | 🟢 ETH bot started.

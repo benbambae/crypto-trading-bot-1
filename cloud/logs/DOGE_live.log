@@ -1,0 +1,142 @@
+2025-06-15 15:38:04,988 | INFO | 🟢 DOGE bot started.
+2025-06-15 15:38:05,106 | ERROR | ❌ Exception: KeyError - 'high'
+2025-06-15 15:38:05,120 | ERROR | Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'high'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/doge_bot.py", line 57, in run_doge_bot
+    buy_signal, sell_signal, price = doge_strategy(df)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/strategiesLive.py", line 229, in doge_strategy
+    df['prev_high'] = df['high'].shift(1)
+                      ~~^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'high'
+
+2025-06-15 15:41:45,547 | INFO | 🟢 DOGE bot started.
+2025-06-15 15:41:45,679 | ERROR | ❌ Exception: KeyError - 'prev_open'
+2025-06-15 15:41:45,692 | ERROR | Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'prev_open'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/doge_bot.py", line 56, in run_doge_bot
+    buy_signal, sell_signal, price = doge_strategy(df)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/strategiesLive.py", line 253, in doge_strategy
+    df['bullish_engulfing'] = (df['open'] < df['prev_close']) & (df['close'] > df['prev_open'])
+                                                                               ~~^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'prev_open'
+
+2025-06-15 15:41:53,806 | INFO | 🟢 DOGE bot started.
+2025-06-15 15:41:53,952 | ERROR | ❌ Exception: KeyError - 'prev_open'
+2025-06-15 15:41:53,958 | ERROR | Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'prev_open'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/doge_bot.py", line 56, in run_doge_bot
+    buy_signal, sell_signal, price = doge_strategy(df)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/strategiesLive.py", line 253, in doge_strategy
+    df['bullish_engulfing'] = (df['open'] < df['prev_close']) & (df['close'] > df['prev_open'])
+                                                                               ~~^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'prev_open'
+
+2025-06-15 15:42:01,599 | INFO | 🟢 DOGE bot started.
+2025-06-15 15:42:01,735 | ERROR | ❌ Exception: KeyError - 'prev_open'
+2025-06-15 15:42:01,744 | ERROR | Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'prev_open'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/doge_bot.py", line 56, in run_doge_bot
+    buy_signal, sell_signal, price = doge_strategy(df)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/strategiesLive.py", line 253, in doge_strategy
+    df['bullish_engulfing'] = (df['open'] < df['prev_close']) & (df['close'] > df['prev_open'])
+                                                                               ~~^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'prev_open'
+
+2025-06-15 15:42:09,895 | INFO | 🟢 DOGE bot started.
+2025-06-15 15:42:10,005 | ERROR | ❌ Exception: KeyError - 'prev_open'
+2025-06-15 15:42:10,018 | ERROR | Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'prev_open'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/doge_bot.py", line 56, in run_doge_bot
+    buy_signal, sell_signal, price = doge_strategy(df)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/cloud/strategiesLive.py", line 253, in doge_strategy
+    df['bullish_engulfing'] = (df['open'] < df['prev_close']) & (df['close'] > df['prev_open'])
+                                                                               ~~^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benjamin/Desktop/bencryptobot/crypto-trading-bot/venv/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'prev_open'
+
+2025-06-15 15:43:10,772 | INFO | 🟢 DOGE bot started.
+2025-06-15 15:43:10,882 | INFO | No trade action.

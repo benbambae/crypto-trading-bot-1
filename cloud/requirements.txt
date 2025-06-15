@@ -1,0 +1,14 @@
+ccxt==4.4.15
+pandas==2.2.3
+numpy==2.2.4
+python-binance==1.0.19
+praw==7.8.1
+psaw==0.1.0
+tweepy==4.14.0
+vaderSentiment==3.3.2
+textblob==0.18.0.post0
+python-telegram-bot==20.7
+PyYAML==6.0.2
+matplotlib==3.10.1
+requests==2.32.3
+pandas_ta==0.3.14b0

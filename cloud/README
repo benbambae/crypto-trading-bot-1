@@ -1,0 +1,31 @@
+# Telegram-Based Crypto Trading Bot (Dockerized)
+
+This is a Dockerized crypto trading bot that runs on AWS EC2. It integrates with Binance API, Telegram Bot API, and uses technical indicators, sentiment analysis, and whale alerts for multi-coin strategy execution.
+
+---
+
+## 🚀 Features
+
+- Concurrent trading for multiple coins (ETH, LINK, DOGE, ARB)
+- Uses technical indicators, Reddit/Twitter sentiment, and whale alerts
+- Telegram bot interface for monitoring and control
+- Dockerized for simple deployment on any machine or cloud server
+
+---
+
+## ⚙️ Setup Instructions (AWS EC2)
+
+### 1. Launch EC2 Instance
+
+- Use **Amazon Linux 2** (Free Tier eligible)
+- Instance Type: `t2.micro`
+- Open port **22 (SSH)** in the security group
+- Generate or use an existing `.pem` key
+
+---
+
+### 2. SSH Into Your EC2 Instance
+
+```bash
+chmod 400 your-key.pem
+ssh -i your-key.pem ec2-user@<your-ec2-public-ip>
