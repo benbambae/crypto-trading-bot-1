@@ -311,9 +311,6 @@ This bot is for educational purposes. Cryptocurrency trading involves substantia
 - Understand the strategies before using real funds
 - Monitor your bot regularly
 
-## License
-
-[Specify your license here]
 
 ---
 
